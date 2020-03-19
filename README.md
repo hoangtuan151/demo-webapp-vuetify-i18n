@@ -32,3 +32,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Ref
 - https://github.com/intlify/vue-i18n-loader
 - https://vuetifyjs.com
+- https://alligator.io/vuejs/vuex-persist-state

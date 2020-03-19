@@ -35,3 +35,11 @@
     </v-content>
   </v-app>
 </template>
+
+<script>
+import {localeMixin} from '@/utils/locale-mixin'
+
+export default {
+  mixins: [localeMixin]  
+}
+</script>
