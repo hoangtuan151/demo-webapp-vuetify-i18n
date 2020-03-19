@@ -27,3 +27,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Ref
+- https://github.com/intlify/vue-i18n-loader
+- https://vuetifyjs.com

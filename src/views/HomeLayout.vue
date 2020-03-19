@@ -1,3 +1,26 @@
+<i18n>
+{
+  "en": {
+    "side-nav": {
+      "login": "Login"
+    },
+    "main-nav": {
+      "recent": "Recent",
+      "favorite": "Favorites"
+    }
+  },
+  "vn": {
+    "side-nav": {
+      "login": "Đăng nhập"
+    },
+    "main-nav": {
+      "recent": "Gần đây",
+      "favorite": "Yêu thích"
+    }
+  }
+}
+</i18n>
+
 <template>
   <v-app>
 
@@ -10,7 +33,7 @@
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>Login</v-list-item-title>
+            <v-list-item-title>{{ $t('side-nav.login') }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -21,13 +44,13 @@
       <v-app-bar-nav-icon @click="sidebar = true" />
 
       <v-toolbar-title>
-        Web App
+        {{ $t('app-title') }}
       </v-toolbar-title>
 
       <v-spacer/>
 
-      <v-btn text icon @click="switchLang()">
-        VN
+      <v-btn text icon @click="changeLocale">
+        {{ currentLocale }}
       </v-btn>
     </v-app-bar>
 
@@ -38,11 +61,11 @@
     <!-- Bottom nav bar -->
     <v-bottom-navigation grow v-model="bottomNav" app>
       <v-btn value="recent" to="/recent">
-        <span>Recent</span>
+        <span>{{ $t('main-nav.recent') }}</span>
         <v-icon>mdi-history</v-icon>
       </v-btn>
       <v-btn value="favorites" to="/favorite">
-        <span>Favorites</span>
+        <span>{{ $t('main-nav.favorite') }}</span>
         <v-icon>mdi-heart</v-icon>
       </v-btn>
     </v-bottom-navigation>
@@ -51,11 +74,28 @@
 </template>
 
 <script>
+import {localeMixin} from '@/utils/locale-mixin'
+
 export default {
+  mixins: [localeMixin],
   data () {
     return {
       sidebar: false,
       bottomNav: 'recent'
+    }
+  },
+  computed: {
+    currentLocale () {
+      return this.$i18n.locale.toUpperCase()
+    }
+  },
+  methods: {
+    changeLocale () {
+      if (this.currentLocale === 'EN') {
+        this.$store.commit('SET_APP_LOCALE', 'vn')
+      } else {
+        this.$store.commit('SET_APP_LOCALE', 'en')
+      }
     }
   }
 }

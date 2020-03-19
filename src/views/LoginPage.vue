@@ -1,3 +1,16 @@
+<i18n>
+{
+  "en": {
+    "title": "Login",
+    "greeting": "Welcome to Login"
+  },
+  "vn": {
+    "title": "Đăng nhập",
+    "greeting": "Trang đăng nhập"
+  }
+}
+</i18n>
+
 <template>
   <v-app>
     <v-app-bar app>
@@ -5,7 +18,7 @@
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
       <v-toolbar-title>
-        Login
+        {{ $t('title') }}
       </v-toolbar-title>
     </v-app-bar>
 
@@ -14,7 +27,7 @@
         <v-layout text-center>
           <v-flex>
             <v-alert text color="warning">
-              Login page
+              {{ $t('greeting') }}
             </v-alert>
           </v-flex>
         </v-layout>

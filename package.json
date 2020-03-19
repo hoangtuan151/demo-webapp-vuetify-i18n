@@ -11,11 +11,13 @@
     "core-js": "^3.6.4",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.11",
+    "vue-i18n": "^8.15.5",
     "vue-router": "^3.1.5",
     "vuetify": "^2.2.11",
     "vuex": "^3.1.2"
   },
   "devDependencies": {
+    "@intlify/vue-i18n-loader": "^0.6.1",
     "@vue/cli-plugin-babel": "^4.2.0",
     "@vue/cli-plugin-eslint": "^4.2.0",
     "@vue/cli-plugin-pwa": "^4.2.0",
