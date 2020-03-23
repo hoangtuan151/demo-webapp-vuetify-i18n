@@ -1,12 +1,10 @@
 <i18n>
 {
   "en": {
-    "title": "Login",
-    "greeting": "Welcome to Login"
+    "title": "Login"
   },
   "vn": {
-    "title": "Đăng nhập",
-    "greeting": "Trang đăng nhập"
+    "title": "Đăng nhập"
   }
 }
 </i18n>
@@ -27,7 +25,7 @@
         <v-layout text-center>
           <v-flex>
             <v-alert text color="warning">
-              {{ $t('greeting') }}
+              {{ welcomeText }}
             </v-alert>
           </v-flex>
         </v-layout>
@@ -38,8 +36,14 @@
 
 <script>
 import {localeMixin} from '@/utils/locale-mixin'
+import helper from '@/utils/helper'
 
 export default {
-  mixins: [localeMixin]  
+  mixins: [localeMixin],
+  computed: {
+    welcomeText () {
+      return helper.getText('login-welcome')
+    }
+  }
 }
 </script>
