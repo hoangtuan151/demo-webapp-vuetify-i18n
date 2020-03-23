@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/demo-webapp-vuetify-i18n/css/favorite_page.e66e9574.css"
   },
   {
-    "revision": "eb4070deb1020ecac042",
+    "revision": "a8640aceba87c201b302",
     "url": "/demo-webapp-vuetify-i18n/css/login_page.e66e9574.css"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/demo-webapp-vuetify-i18n/css/recent_page.e66e9574.css"
   },
   {
-    "revision": "89c903825d48d85d0c269beb3bfe321f",
+    "revision": "d36f5cfc3b0eb927f90455242150e07a",
     "url": "/demo-webapp-vuetify-i18n/index.html"
   },
   {
-    "revision": "bb064441210508a152ab",
-    "url": "/demo-webapp-vuetify-i18n/js/app.2cadc134.js"
+    "revision": "ac990fd795580b209952",
+    "url": "/demo-webapp-vuetify-i18n/js/app.88583755.js"
   },
   {
     "revision": "df7c58989ced86f2c590",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/demo-webapp-vuetify-i18n/js/favorite_page.40f65bd9.js"
   },
   {
-    "revision": "eb4070deb1020ecac042",
-    "url": "/demo-webapp-vuetify-i18n/js/login_page.deed4592.js"
+    "revision": "a8640aceba87c201b302",
+    "url": "/demo-webapp-vuetify-i18n/js/login_page.0c7c2033.js"
   },
   {
     "revision": "6e294ad61f8decf02857",
