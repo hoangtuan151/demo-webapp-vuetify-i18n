@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/demo-webapp-vuetify-i18n/css/recent_page.e66e9574.css"
   },
   {
-    "revision": "d36f5cfc3b0eb927f90455242150e07a",
+    "revision": "4608da6813cbfbe7214ed645b2ad0a1e",
     "url": "/demo-webapp-vuetify-i18n/index.html"
   },
   {
-    "revision": "ac990fd795580b209952",
-    "url": "/demo-webapp-vuetify-i18n/js/app.88583755.js"
+    "revision": "d33fdc456ca050fee362",
+    "url": "/demo-webapp-vuetify-i18n/js/app.2c94f381.js"
   },
   {
     "revision": "df7c58989ced86f2c590",
